@@ -1,4 +1,4 @@
-export function generateUUID(){
+export const generateUUID = () => {
     let dt = new Date().getTime();
     let uuidGenerated = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
         let r = (dt + Math.random()*16)%16 | 0;
@@ -8,7 +8,7 @@ export function generateUUID(){
     return uuidGenerated;
 }
 
-export function generateRandomString() {
+export const generateRandomString = () => {
     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let stringGenerated = '';
     const charactersLength = characters.length;

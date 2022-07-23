@@ -6,14 +6,16 @@ import { PATHS } from '../microservices/endpoint_paths.js';
 import { epoch } from '../utils/epoc_date.js';
 import { generateRandomString } from '../utils/dynamic_data.js';
 
-const FIREBASE_URL = __ENV.FIREBASE_URL
-const FIREBASE_TREINTA_KEY = __ENV.FIREBASE_TREINTA_KEY
-const FIREBASE_USER = __ENV.FIREBASE_USER
-const FIREBASE_USER_PASSWORD = __ENV.FIREBASE_USER_PASSWORD
-const ORCH_BASE_URL = __ENV.ORCH_BASE_URL
-const USER_ID = __ENV.USER_ID
-const STORE_ID = __ENV.STORE_ID
-const API_KEY = __ENV.API_KEY
+import { 
+    FIREBASE_URL,
+    FIREBASE_TREINTA_KEY,
+    FIREBASE_USER,
+    FIREBASE_USER_PASSWORD,
+    ORCH_BASE_URL,
+    USER_ID,
+    STORE_ID,
+    API_KEY
+} from '../utils/constants.js';
 
 const TRANSACTION = PATHS.TRANSACTIONS
 
