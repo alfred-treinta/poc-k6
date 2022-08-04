@@ -1,5 +1,7 @@
 export const PATHS = {
-    STORES: {},
+    STORES: {
+        CREATE_PRODUCT: '/product/create'
+    },
     SYNC: {},
     TRANSACTIONS: {
         GET_TRANSACTION: (id) => {
